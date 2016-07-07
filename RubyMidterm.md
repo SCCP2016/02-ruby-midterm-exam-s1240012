@@ -68,7 +68,20 @@ String:"hello"
 # 出力例2
 # 1000
 
-
+age, sex = STDIN.gets.split.map(&:to_i)
+if(age<=12)then
+sum=700
+elsif(age<=18)then
+sum=1000
+elsif(age<=22)then
+sum=1200
+else
+sum=1500
+end
+if(sex==1)then
+sum=sum-200
+end
+puts sum
 ```
 
 ## 4. 適切なプログラムを書け
